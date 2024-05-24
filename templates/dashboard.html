@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Financial Institution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/transfer">Transfer Funds</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Account Summary</h2>
+            <p>Welcome, {{ username }}! Here is a summary of your accounts:</p>
+            <!-- Add account summary content here -->
+        </section>
+        <section>
+            <h2>Recent Transactions</h2>
+            <!-- Add recent transactions content here -->
+        </section>
+        <section>
+            <h2>Financial Insights</h2>
+            <!-- Add financial insights content here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Financial Institution. All rights reserved.</p>
+    </footer>
+</body>
+</html>
